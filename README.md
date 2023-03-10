@@ -35,6 +35,6 @@ Je třeba zaregistrovat jako služby v cli.neon
 ```neon
 services:
     - Infinityloop\Template\Command\ClearCacheCommand
-    - Infinityloop\Template\Command\CompareDbCommand
+    - Infinityloop\Template\Command\CompareDbCommand(%sessionName%)
     - CoolBeans\Command\SqlGeneratorCommand
 ```
