@@ -27,7 +27,7 @@ final class CompareDbCommand extends \Symfony\Component\Console\Command\Command
 
     protected function execute(InputInterface $input, OutputInterface $output) : int
     {
-        $currentStructure = $this->sqlGeneratorCommand->generate('./../app/Storage');
+        $currentStructure = $this->sqlGeneratorCommand->generate(\App\Bootstrap::APP_ROOT . '/Storage');
         $remoteStructure = $this->getRemoteStructure();
 
         if ($currentStructure === $remoteStructure) {
