@@ -12,6 +12,7 @@ final class CompareDbCommand extends \Symfony\Component\Console\Command\Command
     protected static $defaultName = 'compareDb';
 
     public function __construct(
+        private string $projectName,
         private \CoolBeans\Command\SqlGeneratorCommand $sqlGeneratorCommand,
     )
     {
@@ -46,7 +47,7 @@ final class CompareDbCommand extends \Symfony\Component\Console\Command\Command
         $app->add(new \Bref\Console\Command\Cli());
 
         $inputStr = new \Symfony\Component\Console\Input\StringInput(
-            'cli --region eu-central-1 nemovizor-dev-console -- sqlGenerator ./../app/Storage/Bean',
+            'cli --region eu-central-1 ' . $this->projectName . '-dev-console -- sqlGenerator ./../app/Storage/Bean',
         );
         $outputCapture = new class implements OutputInterface {
             /** @var array<string> */
