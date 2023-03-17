@@ -1,5 +1,9 @@
 # Společné věci projektů
 
+## Dev dependence
+
+Zkopírovat si dev dependence z `require-dev` do `require-dev` projektu.
+
 ## Logging
 
 ### DbLogger
