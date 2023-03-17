@@ -2,7 +2,7 @@
 
 ## Dev dependence
 
-Zkopírovat si dev dependence z `require-dev` do `require-dev` projektu.
+Zkopírovat si dev-dependence z `require-dev` do `require-dev` projektu. Případně také `scripts`.
 
 ## Logging
 
