@@ -34,7 +34,7 @@ create index `log_level_index` on `log` (level);
 
 ## Commandy
 
-Je třeba zaregistrovat jako služby v cli.neon
+Je třeba zaregistrovat jako služby v `cli.neon`.
 
 ```neon
 services:
