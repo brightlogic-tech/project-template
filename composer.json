@@ -1,14 +1,14 @@
 {
-  "name": "infinityloop-dev/project-template",
+  "name": "brightlogic-tech/project-template",
   "description": "Knihovna s bootstrapem každého projektu",
-  "homepage": "https://infinityloop.cz",
+  "homepage": "https://brightlogic.tech",
   "type": "library",
   "license": ["proprietary"],
   "readme": "README.md",
   "authors": [
     {
       "name": "Václav Pelíšek",
-      "email": "peldax@infinityloop.dev",
+      "email": "peldax@brightlogic.tech",
       "homepage": "https://www.peldax.com"
     }
   ],
@@ -48,6 +48,7 @@
     "contributte/console":   "^0.9",
     "contributte/guzzlette": "^3.0",
     "kdyby/redis":           "^6.1",
+
     "infinityloop-dev/utils":     "^2.0",
     "infinityloop-dev/coolbeans": "^0.11.2"
   },
