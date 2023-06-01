@@ -28,7 +28,7 @@ CREATE TABLE `log`
 CREATE INDEX `log_level_index` ON `log` (level);
 ```
 
-## Utility Commands
+## Commands
 
 Register services in configuration neon file.
 
