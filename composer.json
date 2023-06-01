@@ -1,7 +1,7 @@
 {
   "name": "brightlogic-tech/project-template",
   "description": "Knihovna s bootstrapem každého projektu",
-  "homepage": "https://brightlogic.tech",
+  "homepage": "https://brightlogic.tech/",
   "type": "library",
   "license": ["proprietary"],
   "readme": "README.md",
@@ -9,7 +9,7 @@
     {
       "name": "Václav Pelíšek",
       "email": "peldax@brightlogic.tech",
-      "homepage": "https://www.peldax.com"
+      "homepage": "https://www.peldax.com/"
     }
   ],
   "autoload": {
@@ -65,13 +65,17 @@
   },
   "scripts": {
     "generate-sql": "php bin/console.php sqlGenerator ./../app/Storage/Bean ./../build/database-build.sql",
+
     "phpunit": "phpunit tests --testdox --exclude ci-skip",
     "phpunit-all": "phpunit tests --testdox",
+
     "phpstan": "phpstan analyze --level 6 app",
     "phpstan-next": "phpstan analyze --level 7 app",
     "phpstan-max": "phpstan analyze --level max app",
+
     "codestyle": "phpcs --standard=vendor/infinityloop-dev/coding-standard/InfinityloopCodingStandard/ruleset.xml --extensions=php --parallel=$(nproc) app tests",
     "codestyle-fix": "phpcbf --standard=vendor/infinityloop-dev/coding-standard/InfinityloopCodingStandard/ruleset.xml --extensions=php --parallel=$(nproc) app tests",
+
     "infection": [
       "Composer\\Config::disableProcessTimeout",
       "infection -j$(nproc)"
