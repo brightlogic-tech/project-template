@@ -1,8 +1,6 @@
 # Utility classes
 
-## Logging
-
-### DbLogger
+## DbLogger
 
 Register services in configuration neon file.
 
