@@ -1,14 +1,10 @@
-# Společné věci projektů
-
-## Dev dependence
-
-Zkopírovat si dev-dependence z `require-dev` do `require-dev` projektu. Případně také `scripts`.
+# Utility classes
 
 ## Logging
 
 ### DbLogger
 
-Je třeba registrovat jako službu v hlavním neon souboru
+Register services in configuration neon file.
 
 ```neon
 services:
@@ -16,10 +12,10 @@ services:
     tracy.logger: Infinityloop\Template\Logging\DbLogger
 ```
 
-Je třeba mít vytvořenou logovací tabulku.
+`log` table needs to be created.
 
 ```sql
-create table `log`
+CREATE TABLE `log`
 (
     `id`      int(11) unsigned auto_increment primary key,
     `time`    datetime default current_timestamp() not null,
@@ -29,16 +25,16 @@ create table `log`
 )
     charset = utf8mb4;
 
-create index `log_level_index` on `log` (level);
+CREATE INDEX `log_level_index` ON `log` (level);
 ```
 
-## Commandy
+## Utility Commands
 
-Je třeba zaregistrovat jako služby v `core.neon`.
+Register services in configuration neon file.
 
 ```neon
 services:
     - Infinityloop\Template\Command\ClearCacheCommand
-    - Infinityloop\Template\Command\CompareDbCommand(%sessionName%)
+    - Infinityloop\Template\Command\CompareDbCommand(%projectName%)
     - CoolBeans\Command\SqlGeneratorCommand
 ```
