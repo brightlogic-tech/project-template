@@ -66,7 +66,7 @@ CREATE INDEX `log_level_index` ON `log` (level);
 
 ## Commands
 
-> Commonly used commands which ease deploying.
+> Commonly used commands which ease deploying and development.
 
 Register services in configuration neon file.
 
