@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\Logging;
+namespace BrightLogic\Template\Logging;
 
 final class DbLogger implements \Tracy\ILogger
 {
     public function __construct(
-        private \Infinityloop\Template\Logging\LogTable $logTable,
+        private \BrightLogic\Template\Logging\LogTable $logTable,
     )
     {
     }

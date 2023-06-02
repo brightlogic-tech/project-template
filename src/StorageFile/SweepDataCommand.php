@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\StorageFile;
+namespace BrightLogic\Template\StorageFile;
 
 use \Symfony\Component\Console\Input\InputInterface;
 use \Symfony\Component\Console\Output\OutputInterface;
@@ -14,7 +14,7 @@ final class SweepDataCommand extends \Symfony\Component\Console\Command\Command
     public function __construct(
         private StorageFileModel $storageFileModel,
         private FileStorage $fileStorage,
-        private \Infinityloop\Template\Logging\LogTable $logTable,
+        private \BrightLogic\Template\Logging\LogTable $logTable,
     )
     {
         parent::__construct(self::$defaultName);

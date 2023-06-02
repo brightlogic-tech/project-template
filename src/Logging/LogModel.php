@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\Logging;
+namespace BrightLogic\Template\Logging;
 
 /**
  * @method Log getRow(\CoolBeans\Contract\PrimaryKey $key) : \CoolBeans\Bean

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\StorageFile;
+namespace BrightLogic\Template\StorageFile;
 
 use \CoolBeans\Attribute\Comment;
 use \CoolBeans\PrimaryKey\IntPrimaryKey;

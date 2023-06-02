@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\Config;
+namespace BrightLogic\Template\Config;
 
 interface Config
 {

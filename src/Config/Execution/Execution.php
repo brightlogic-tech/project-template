@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\Config\Execution;
+namespace BrightLogic\Template\Config\Execution;
 
-interface Execution extends \Infinityloop\Template\Config\Config
+interface Execution extends \BrightLogic\Template\Config\Config
 {
     public function getSecondLevelTempDirectory() : string;
 }

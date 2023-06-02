@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template;
+namespace BrightLogic\Template;
 
 /**
  * @method operation()

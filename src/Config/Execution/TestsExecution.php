@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\Config\Execution;
+namespace BrightLogic\Template\Config\Execution;
 
 final class TestsExecution implements Execution
 {
     public function getFile() : string
     {
-        return \Infinityloop\Template\Bootstrap::APP_ROOT . 'Config/tests.neon';
+        return \BrightLogic\Template\Bootstrap::APP_ROOT . 'Config/tests.neon';
     }
 
     public function getSecondLevelTempDirectory() : string

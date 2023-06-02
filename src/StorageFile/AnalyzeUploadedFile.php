@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\StorageFile;
+namespace BrightLogic\Template\StorageFile;
 
-final class AnalyzeUploadedFile extends \Bref\Event\S3\S3Handler implements \Infinityloop\Template\Operation
+final class AnalyzeUploadedFile extends \Bref\Event\S3\S3Handler implements \BrightLogic\Template\Operation
 {
     public const IMAGE_TYPES = [
         'image/jpeg',
@@ -47,7 +47,7 @@ final class AnalyzeUploadedFile extends \Bref\Event\S3\S3Handler implements \Inf
         } elseif (\in_array($insert['mime'], self::VIDEO_TYPES, true)) {
             $url = $this->fileStorage->getDownloadLink($file);
             $mediaInfo = new \Mhor\MediaInfo\MediaInfo();
-            $mediaInfo->setConfig('command', \Infinityloop\Template\Bootstrap::PROJECT_ROOT . '/runtime/mediainfo/mediainfo');
+            $mediaInfo->setConfig('command', \BrightLogic\Template\Bootstrap::PROJECT_ROOT . '/runtime/mediainfo/mediainfo');
             $duration = $mediaInfo->getInfo($url)->getGeneral()?->get('duration');
             \assert($duration instanceof \Mhor\MediaInfo\Attribute\Duration);
 

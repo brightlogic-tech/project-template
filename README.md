@@ -19,10 +19,10 @@ Create simple PHP file and initializer preloader.
 include __DIR__ . '/../vendor/autoload.php';
 
 $paths = [
-    \Infinityloop\Template\Bootstrap::PROJECT_ROOT,
+    \BrightLogic\Template\Bootstrap::PROJECT_ROOT,
 ];
 
-$preloader = new \Infinityloop\Template\Bootstrap(...$paths);
+$preloader = new \BrightLogic\Template\Bootstrap(...$paths);
 $preloader->load();
 ```
 
@@ -46,8 +46,8 @@ Register services in configuration neon file.
 
 ```neon
 services:
-    - Infinityloop\Template\Logging\LogTable
-    tracy.logger: Infinityloop\Template\Logging\DbLogger
+    - BrightLogic\Template\Logging\LogTable
+    tracy.logger: BrightLogic\Template\Logging\DbLogger
 ```
 
 `log` table needs to be created. You may use provided bean to generate this table.
@@ -72,7 +72,7 @@ Register services in configuration neon file.
 
 ```neon
 services:
-    - Infinityloop\Template\Command\ClearCacheCommand
-    - Infinityloop\Template\Command\CompareDbCommand(%projectName%)
+    - BrightLogic\Template\Command\ClearCacheCommand
+    - BrightLogic\Template\Command\CompareDbCommand(%projectName%)
     - CoolBeans\Command\SqlGeneratorCommand
 ```

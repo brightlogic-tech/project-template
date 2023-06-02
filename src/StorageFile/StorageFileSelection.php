@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\StorageFile;
+namespace BrightLogic\Template\StorageFile;
 
 /**
  * @method StorageFile current() : \CoolBeans\Bean

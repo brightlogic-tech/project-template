@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template;
+namespace BrightLogic\Template;
 
-use \Infinityloop\Template\Config\Environment\Environment;
-use \Infinityloop\Template\Config\Execution\Execution;
+use \BrightLogic\Template\Config\Environment\Environment;
+use \BrightLogic\Template\Config\Execution\Execution;
 
 final class Bootstrap
 {
@@ -113,15 +113,15 @@ final class Bootstrap
     private static function initEnvironment() : Environment
     {
         return self::isDebugMode()
-            ? new \Infinityloop\Template\Config\Environment\LocalEnvironment()
-            : new \Infinityloop\Template\Config\Environment\ProductionEnvironment();
+            ? new \BrightLogic\Template\Config\Environment\LocalEnvironment()
+            : new \BrightLogic\Template\Config\Environment\ProductionEnvironment();
     }
 
     private static function initExecution() : Execution
     {
         return self::getEnvironment('PHPUNIT_MODE') === 'yes'
-            ? new \Infinityloop\Template\Config\Execution\TestsExecution()
-            : new \Infinityloop\Template\Config\Execution\DefaultExecution();
+            ? new \BrightLogic\Template\Config\Execution\TestsExecution()
+            : new \BrightLogic\Template\Config\Execution\DefaultExecution();
     }
 
     /**

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Infinityloop\Template\StorageFile;
+namespace BrightLogic\Template\StorageFile;
 
 /**
  * @method StorageFile getRow(\CoolBeans\Contract\PrimaryKey $key) : \CoolBeans\Bean

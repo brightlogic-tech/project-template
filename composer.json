@@ -14,7 +14,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Infinityloop\\Template\\": "src/"
+      "BrightLogic\\Template\\": "src/"
     }
   },
   "require": {
