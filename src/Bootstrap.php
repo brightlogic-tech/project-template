@@ -45,7 +45,7 @@ final class Bootstrap
 
     private static function getConfigurator() : \Nette\Bootstrap\Configurator
     {
-        \chdir(__DIR__ . '/../bin');
+        \chdir(self::APP_ROOT . '/../bin');
         self::$environment = self::initEnvironment();
         self::$execution = self::initExecution();
         $tempDir =
@@ -82,7 +82,7 @@ final class Bootstrap
     private static function getConfigFiles() : array
     {
         $files = [
-            __DIR__ . '/Config/core.neon',
+            self::APP_ROOT . '/Config/core.neon',
             self::$environment->getFile(),
             self::$execution->getFile(),
         ];

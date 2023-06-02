@@ -8,7 +8,7 @@ final class LocalEnvironment implements Environment
 {
     public function getFile() : string
     {
-        return \BrightLogic\Template\Bootstrap::APP_ROOT . 'Config/local.neon';
+        return \BrightLogic\Template\Bootstrap::APP_ROOT . '/Config/local.neon';
     }
 
     public function getBaseTempDirectory() : string

@@ -8,7 +8,7 @@ final class TestsExecution implements Execution
 {
     public function getFile() : string
     {
-        return \BrightLogic\Template\Bootstrap::APP_ROOT . 'Config/tests.neon';
+        return \BrightLogic\Template\Bootstrap::APP_ROOT . '/Config/tests.neon';
     }
 
     public function getSecondLevelTempDirectory() : string

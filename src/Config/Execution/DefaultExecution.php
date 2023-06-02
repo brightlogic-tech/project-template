@@ -8,7 +8,7 @@ final class DefaultExecution implements Execution
 {
     public function getFile() : string
     {
-        return \BrightLogic\Template\Bootstrap::APP_ROOT . 'Config/default.neon';
+        return \BrightLogic\Template\Bootstrap::APP_ROOT . '/Config/default.neon';
     }
 
     public function getSecondLevelTempDirectory() : string

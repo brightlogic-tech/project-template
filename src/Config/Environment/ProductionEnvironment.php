@@ -8,7 +8,7 @@ final class ProductionEnvironment implements Environment
 {
     public function getFile() : string
     {
-        return \BrightLogic\Template\Bootstrap::APP_ROOT . 'Config/production.neon';
+        return \BrightLogic\Template\Bootstrap::APP_ROOT . '/Config/production.neon';
     }
 
     public function getBaseTempDirectory() : string
