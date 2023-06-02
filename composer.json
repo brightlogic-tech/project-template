@@ -1,6 +1,6 @@
 {
   "name": "brightlogic-tech/project-template",
-  "description": "Knihovna s bootstrapem každého projektu",
+  "description": "Package with common classes used across multiple projects.",
   "homepage": "https://brightlogic.tech/",
   "type": "library",
   "license": ["MIT"],
