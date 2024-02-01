@@ -24,7 +24,7 @@
     "ext-pdo_mysql": "*",
     "ext-imagick": "*",
 
-    "bref/bref":                 "^1.7",
+    "bref/bref":                 "^1.7 || ^2.0",
     "bref/extra-php-extensions": "^0.12.2",
     "aws/aws-sdk-php":           "^3.222",
 
